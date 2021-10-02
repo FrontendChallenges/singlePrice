@@ -2,8 +2,8 @@ import React from 'react';
 import './App.css';
 import { ThemeProvider } from '@mui/material';
 import theme from './style/theme';
-import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
+import PriceCard from './components/PriceCard';
 import Main from './components/Main';
 import Footer from './components/Footer';
 
@@ -12,13 +12,7 @@ function App() {
     <ThemeProvider theme={theme}>
       <Container maxWidth='lg'>
         <Main>
-          <Box
-            sx={{
-              backgroundColor: 'red',
-              height: '90vh',
-              position: 'relative',
-            }}
-          ></Box>
+          <PriceCard></PriceCard>
         </Main>
         <Footer author='Jinok' challengeBy='Frontend Mentor' />
       </Container>
