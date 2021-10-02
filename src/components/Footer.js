@@ -1,37 +1,25 @@
 import React from 'react';
 import Typography from '@mui/material/Typography';
+import Link from '@mui/material/Link';
 import Button from '@mui/material/Button';
 import Box from '@mui/material/Box';
 
 function Footer({ author, challengeBy }) {
   return (
     <footer>
-      <Box sx={{ backgroundColor: 'blue' }}>
+      <Box sx={{ textAlign: 'center', padding: '.5rem 0' }}>
         <Typography variant='body1'>
           Challenge by
-          <a
+          <Link
             href='https://www.frontendmentor.io?ref=challenge'
             target='_blank'
             rel='noreferrer'
           >
             {challengeBy}
-          </a>
-          . Coded by <a href='#top'>{author}</a>.
+          </Link>
+          . Coded by <Link href='#top'>{author}.</Link>
         </Typography>
       </Box>
-      {/* <Container className='text-center' fluid={'md'}>
-        <p>
-          Challenge by
-          <a
-            href='https://www.frontendmentor.io?ref=challenge'
-            target='_blank'
-            rel='noreferrer'
-          >
-            {challengeBy}
-          </a>
-          . Coded by <a href='#top'>{author}</a>.
-        </p>
-      </Container> */}
     </footer>
   );
 }
