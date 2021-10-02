@@ -4,6 +4,9 @@ const theme = createTheme({
   typography: {
     htmlFontSize: 10,
     fontFamily: "'Karla', sans-serif",
+    body1: {
+      fontSize: '1.6rem',
+    },
   },
   palette: {
     primary: { main: 'hsl(179, 62%, 43%)' },
