@@ -7,7 +7,7 @@ import Box from '@mui/material/Box';
 function Footer({ author, challengeBy }) {
   return (
     <footer>
-      <Box sx={{ textAlign: 'center', padding: '.5rem 0' }}>
+      <Box sx={{ textAlign: 'center', padding: '1rem 0' }}>
         <Typography variant='body1'>
           Challenge by
           <Link
