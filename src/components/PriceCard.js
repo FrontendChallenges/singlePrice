@@ -26,7 +26,12 @@ function PriceCard({
     >
       <Grid
         container
-        sx={{ backgroundColor: 'white', flexDirection: 'column' }}
+        sx={{
+          backgroundColor: 'white',
+          flexDirection: 'column',
+          borderRadius: '.8rem',
+          padding: '4rem',
+        }}
       >
         <Grid item>
           <Community

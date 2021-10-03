@@ -15,6 +15,9 @@ const theme = createTheme({
       primary: 'hsl(218, 22%, 67%)',
       secondary: 'hsl(204, 43%, 93%)',
     },
+    background: {
+      default: '#E6EFF6',
+    },
   },
 });
 
