@@ -1,7 +1,6 @@
 import React from 'react';
 import Typography from '@mui/material/Typography';
 import Link from '@mui/material/Link';
-import Button from '@mui/material/Button';
 import Box from '@mui/material/Box';
 
 function Footer({ author, challengeBy }) {

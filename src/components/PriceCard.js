@@ -1,8 +1,20 @@
 import React from 'react';
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
+import Community from './Community';
+import Subscription from './Subscription';
+import Whyus from './Whyus';
 
-function PriceCard() {
+function PriceCard({
+  joinTitle,
+  joinSummary,
+  joinDesc,
+  subScripTitle,
+  subScripPrice,
+  subScripDesc,
+  whyUsTitle,
+  whyUsDesc,
+}) {
   return (
     <Box
       sx={{
@@ -16,10 +28,24 @@ function PriceCard() {
         container
         sx={{ backgroundColor: 'white', flexDirection: 'column' }}
       >
-        <Grid item>Row1</Grid>
+        <Grid item>
+          <Community
+            title={joinTitle}
+            summary={joinSummary}
+            description={joinDesc}
+          />
+        </Grid>
         <Grid container item>
-          <Grid item>Row2</Grid>
-          <Grid item>Row3</Grid>
+          <Grid item sm={6}>
+            <Subscription
+              title={subScripTitle}
+              price={subScripPrice}
+              description={subScripDesc}
+            />
+          </Grid>
+          <Grid item sm={6}>
+            <Whyus title={whyUsTitle} description={whyUsDesc} />
+          </Grid>
         </Grid>
       </Grid>
     </Box>

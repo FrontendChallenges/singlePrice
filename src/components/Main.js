@@ -6,7 +6,6 @@ function Main({ children }) {
     <main>
       <Box
         sx={{
-          backgroundColor: 'red',
           height: '90vh',
           position: 'relative',
         }}
