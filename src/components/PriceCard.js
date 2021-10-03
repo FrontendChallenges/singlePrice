@@ -16,21 +16,15 @@ function PriceCard({
   whyUsDesc,
 }) {
   return (
-    <Box
-      sx={{
-        position: 'absolute',
-        top: '50%',
-        left: '50%',
-        transform: 'translate(-50%,-50%)',
-      }}
-    >
+    <Box sx={{ display: 'flex', justifyContent: 'center' }}>
       <Grid
         container
         sx={{
           backgroundColor: 'white',
           flexDirection: 'column',
           borderRadius: '.8rem',
-          padding: '4rem',
+          overflow: 'hidden',
+          width: '55%',
         }}
       >
         <Grid item>
@@ -41,14 +35,14 @@ function PriceCard({
           />
         </Grid>
         <Grid container item>
-          <Grid item sm={6}>
+          <Grid item sm={12} md={6}>
             <Subscription
               title={subScripTitle}
               price={subScripPrice}
               description={subScripDesc}
             />
           </Grid>
-          <Grid item sm={6}>
+          <Grid item sm={12} md={6}>
             <Whyus title={whyUsTitle} description={whyUsDesc} />
           </Grid>
         </Grid>

@@ -3,15 +3,15 @@ import './App.css';
 import { ThemeProvider } from '@mui/material';
 import theme from './assets/style/theme';
 import Container from '@mui/material/Container';
+import Box from '@mui/material/Box';
 import PriceCard from './components/PriceCard';
-import Main from './components/Main';
 import Footer from './components/Footer';
 
 function App() {
   return (
     <ThemeProvider theme={theme}>
       <Container maxWidth='lg'>
-        <Main>
+        <Box component='main'>
           <PriceCard
             joinTitle='Join our community'
             joinSummary='30-day, hassle-free money back guarantee'
@@ -22,7 +22,7 @@ function App() {
             whyUsTitle='Why Us'
             whyUsDesc='Tutorials by industry experts Peer & expert code review Coding exercises Access to our GitHub repos Community forum Flashcard decks New videos every week'
           />
-        </Main>
+        </Box>
         <Footer author='Jinok' challengeBy='Frontend Mentor' />
       </Container>
     </ThemeProvider>
